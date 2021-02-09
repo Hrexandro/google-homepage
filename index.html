@@ -1,4 +1,39 @@
 <style>
+    body {
+        background: white;
+    }
+
+    #searcher {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20.5vh;
+    }
+
+    #searchbar input {
+        margin-top: 30px;
+        height: 46px;
+        width: 583px;
+        background-color:white;
+        border-radius:25px;
+        border: 1px solid #e6e6e6;
+    
+    }
+
+    .button {
+        margin-top: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+        padding-left:18px;
+        padding-right:18px;
+        margin-right:10px;
+        color: #606060;
+        background-color: #F2F2F2;
+        border-radius:5px;
+        border: 1px solid #F2F2F2;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+    }
 
 </style>
 <html>
@@ -8,7 +43,14 @@
 </head>
 
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+    <div id="searcher">
+        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google logo">
+        <form id="searchbar"><input type="search">
+        </form>
+        <button class="button" type="button">Google Search</button>
+        <button class="button" type="button">I'm Feeling Lucky</button>
+    </div>
 </body>
 
 </html>

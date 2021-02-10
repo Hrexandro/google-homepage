@@ -14,25 +14,103 @@
         margin-top: 30px;
         height: 46px;
         width: 583px;
-        background-color:white;
-        border-radius:25px;
+        background-color: white;
+        border-radius: 25px;
         border: 1px solid #e6e6e6;
-    
+
     }
 
     .button {
         margin-top: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-        padding-left:18px;
-        padding-right:18px;
-        margin-right:10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-right: 10px;
         color: #606060;
         background-color: #F2F2F2;
-        border-radius:5px;
+        border-radius: 5px;
         border: 1px solid #F2F2F2;
         font-family: arial, sans-serif;
         font-size: 14px;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        font-family: arial, sans-serif;
+
+        padding:7px;
+    }
+
+
+
+    #navbar {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    #navbar-left {
+        text-align: left;
+padding-top: 12px;
+padding-left: 13px;
+display:inline-block;
+    }
+    #navbar-right {
+        display:flex;
+        text-align: right;
+        padding-top: 10px;
+padding-right: 13px;
+align-items: flex-start;
+
+    }
+
+    #navbar-button {
+        
+        color:white;
+        font-weight: bold;
+        
+        font-size: 13px;
+        
+        
+    }
+
+
+
+    .navbar-link{
+        font-size: 13px;
+        color:#474b4e;
+        margin:5px;
+    }
+
+    #buttonbg{
+        background: #4386F9;
+        border-radius: 1.5px;
+        padding-top:7px;
+        padding-right: 7px;
+        padding-left: 7px;
+        padding-bottom: 7px;
+        margin:5px;
+    }
+    #navbar a:hover{
+        text-decoration: underline;
+    }
+
+    #buttonbg a:hover {
+        text-decoration: none;
+        
+    }
+
+    #squares {
+        margin-top: 10px;
+        margin-right:3px;
+        width:20px; 
+        height:20px;
+        
+    }
+
+    #squares:hover {
+       
+     
     }
 
 </style>
@@ -40,6 +118,22 @@
 
 <head>
     <title>Google</title>
+    <header>
+        <div id="navbar">
+            <div id=navbar-left>
+            <a  class="navbar-link" href="">About</a>
+            <a  class="navbar-link" href="">Store</a></div>
+            <nav id=navbar-right>
+            <a  class="navbar-link" href="">Gmail</a>
+            <a  class="navbar-link" href="">Images</a>
+            <span id="grid">
+            <a  class="navbar-link" href=""><img id="squares"  src="https://lh3.googleusercontent.com/proxy/rkBx-l-bDAvb1qHaQGNgavr5e-abbL3IWea8YutKgMJSmz6482B7fMY2AjjoYFllV0c0XVDrrBDXNlEB2Jus9jhrlYoWGp95k63yX8bZgXg51aS57omf9btHZoJ8Rlm6Qy87-7FcIiWg5aUsbkOXzQvFNrJ_YA"></a></span>
+    <span id="buttonbg">
+            <a id="navbar-button"  href="">Sign in</a></span>
+    </div>
+
+        </nav>
+    </header>
 </head>
 
 <body>
@@ -47,9 +141,9 @@
         <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
             alt="google logo">
         <form id="searchbar"><input type="search">
-        </form>
+            <br>
         <button class="button" type="button">Google Search</button>
-        <button class="button" type="button">I'm Feeling Lucky</button>
+        <button class="button" type="button">I'm Feeling Lucky</button></form>
     </div>
 </body>
 

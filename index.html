@@ -119,12 +119,33 @@ align-items: flex-start;
         height:20px;
         
     }
+    #footer-bg {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #a3a3a3;
+  background-color: #F2F2F2;
+  /*background-color: green;*/
+  left: 0;
+  right: 0;
+  height:40px;
+}
 
+    footer a{
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        color: #606060;
+        
+        margin:10px 10px 30px 10px;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+    }
 </style>
 <html>
 
 <head>
     <title>Google</title>
+</head>
+<body>
     <header>
         <div id="navbar">
             <div id=navbar-left>
@@ -141,9 +162,9 @@ align-items: flex-start;
 
         </nav>
     </header>
-</head>
 
-<body>
+
+
     <div id="searcher">
         <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
             alt="google logo">
@@ -152,6 +173,17 @@ align-items: flex-start;
         <button class="button" type="button">Google Search</button>
         <button class="button" type="button">I'm Feeling Lucky</button></form>
     </div>
+
+    <footer>
+        <div id="footer-bg">
+<a href="">Advertising</a>
+<a href="">Business</a>
+<a href="">How Search works</a>
+<a href="">Privacy</a>
+<a href="">Terms</a>
+<a href="">Settings</a>
+</div>
+    </footer>
 </body>
 
 </html>

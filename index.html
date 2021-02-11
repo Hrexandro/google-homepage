@@ -58,8 +58,8 @@ display:inline-block;
     #navbar-right {
         display:flex;
         text-align: right;
-        padding-top: 10px;
-padding-right: 13px;
+        padding-top: 4px;
+padding-right: 15px;
 align-items: flex-start;
 
     }
@@ -100,17 +100,24 @@ align-items: flex-start;
         
     }
 
-    #squares {
+    #grid {
         margin-top: 10px;
-        margin-right:3px;
+        margin-right:10px;
+        margin-left:10px;
+        width:20px; 
+        height:20px;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCd04Bf1tBcXq6eGsE5QDU9MD7FPQ_GpF0w&usqp=CAU");
+        background-size: 18px;
+        background-repeat: no-repeat;
+    }
+
+    #grid:hover {
+        background: url("https://static.thenounproject.com/png/256131-200.png");
+        background-size: 16px;
+        background-repeat: no-repeat;
         width:20px; 
         height:20px;
         
-    }
-
-    #squares:hover {
-       
-     
     }
 
 </style>
@@ -126,8 +133,8 @@ align-items: flex-start;
             <nav id=navbar-right>
             <a  class="navbar-link" href="">Gmail</a>
             <a  class="navbar-link" href="">Images</a>
-            <span id="grid">
-            <a  class="navbar-link" href=""><img id="squares"  src="https://lh3.googleusercontent.com/proxy/rkBx-l-bDAvb1qHaQGNgavr5e-abbL3IWea8YutKgMJSmz6482B7fMY2AjjoYFllV0c0XVDrrBDXNlEB2Jus9jhrlYoWGp95k63yX8bZgXg51aS57omf9btHZoJ8Rlm6Qy87-7FcIiWg5aUsbkOXzQvFNrJ_YA"></a></span>
+            <div id="grid">
+            <a  class="navbar-link" title="Google apps" href=""></a></div>
     <span id="buttonbg">
             <a id="navbar-button"  href="">Sign in</a></span>
     </div>

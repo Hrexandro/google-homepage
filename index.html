@@ -20,6 +20,10 @@
 
     }
 
+    #searchbar input:hover {
+        box-shadow: 2px 2px 2px #c9c9c9;
+    }
+
     .button {
         margin-top: 15px;
         padding-top: 10px;
@@ -35,77 +39,84 @@
         font-size: 14px;
     }
 
-    #navbar a{
+    .button:hover {
+        color: black;
+        border: 1px solid rgb(189, 188, 188);
+    }
+
+    #navbar a {
         text-decoration: none;
         font-family: arial, sans-serif;
 
-        padding:7px;
+        padding: 7px;
     }
 
 
 
     #navbar {
         display: flex;
-    justify-content: space-between;
+        justify-content: space-between;
     }
 
     #navbar-left {
         text-align: left;
-padding-top: 12px;
-padding-left: 13px;
-display:inline-block;
+        padding-top: 12px;
+        padding-left: 13px;
+        display: inline-block;
     }
+
     #navbar-right {
-        display:flex;
+        display: flex;
         text-align: right;
         padding-top: 4px;
-padding-right: 15px;
-align-items: flex-start;
+        padding-right: 15px;
+        align-items: flex-start;
 
     }
 
     #navbar-button {
-        
-        color:white;
+
+        color: white;
         font-weight: bold;
-        
+
         font-size: 13px;
-        
-        
+
+
     }
 
 
 
-    .navbar-link{
+    .navbar-link {
         font-size: 13px;
-        color:#474b4e;
-        margin:5px;
+        color: #474b4e;
+        margin: 5px;
     }
 
-    #buttonbg{
+    #buttonbg {
         background: #4386F9;
         border-radius: 1.5px;
-        padding-top:7px;
+        padding-top: 7px;
         padding-right: 7px;
         padding-left: 7px;
         padding-bottom: 7px;
-        margin:5px;
+        margin: 5px;
     }
-    #navbar a:hover{
+
+    #navbar a:hover {
         text-decoration: underline;
     }
 
     #buttonbg a:hover {
         text-decoration: none;
-        
+
     }
 
     #grid {
         margin-top: 10px;
-        margin-right:10px;
-        margin-left:10px;
-        width:20px; 
-        height:20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
         background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCd04Bf1tBcXq6eGsE5QDU9MD7FPQ_GpF0w&usqp=CAU");
         background-size: 18px;
         background-repeat: no-repeat;
@@ -115,29 +126,36 @@ align-items: flex-start;
         background: url("https://static.thenounproject.com/png/256131-200.png");
         background-size: 16px;
         background-repeat: no-repeat;
-        width:20px; 
-        height:20px;
-        
-    }
-    #footer-bg {
-  position: absolute;
-  bottom: 0;
-  border-top: 1px solid #a3a3a3;
-  background-color: #F2F2F2;
-  /*background-color: green;*/
-  left: 0;
-  right: 0;
-  height:40px;
-}
+        width: 20px;
+        height: 20px;
 
-    footer a{
+    }
+
+    #footer-bg {
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #d1d0d0;
+        background-color: #F2F2F2;
+        left: 0;
+        right: 0;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer a {
         text-decoration: none;
         font-family: arial, sans-serif;
         color: #606060;
-        
-        margin:10px 10px 30px 10px;
+
+        margin: 10px 10px 30px 10px;
         font-family: arial, sans-serif;
         font-size: 14px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
     }
 </style>
 <html>
@@ -145,20 +163,23 @@ align-items: flex-start;
 <head>
     <title>Google</title>
 </head>
+
 <body>
     <header>
         <div id="navbar">
             <div id=navbar-left>
-            <a  class="navbar-link" href="">About</a>
-            <a  class="navbar-link" href="">Store</a></div>
+                <a class="navbar-link" href="">About</a>
+                <a class="navbar-link" href="">Store</a>
+            </div>
             <nav id=navbar-right>
-            <a  class="navbar-link" href="">Gmail</a>
-            <a  class="navbar-link" href="">Images</a>
-            <div id="grid">
-            <a  class="navbar-link" title="Google apps" href=""></a></div>
-    <span id="buttonbg">
-            <a id="navbar-button"  href="">Sign in</a></span>
-    </div>
+                <a class="navbar-link" href="">Gmail</a>
+                <a class="navbar-link" href="">Images</a>
+                <div id="grid">
+                    <a class="navbar-link" title="Google apps" href=""></a>
+                </div>
+                <span id="buttonbg">
+                    <a id="navbar-button" href="">Sign in</a></span>
+        </div>
 
         </nav>
     </header>
@@ -170,19 +191,24 @@ align-items: flex-start;
             alt="google logo">
         <form id="searchbar"><input type="search">
             <br>
-        <button class="button" type="button">Google Search</button>
-        <button class="button" type="button">I'm Feeling Lucky</button></form>
+            <button class="button" type="button">Google Search</button>
+            <button class="button" type="button">I'm Feeling Lucky</button>
+        </form>
     </div>
 
     <footer>
         <div id="footer-bg">
-<a href="">Advertising</a>
-<a href="">Business</a>
-<a href="">How Search works</a>
-<a href="">Privacy</a>
-<a href="">Terms</a>
-<a href="">Settings</a>
-</div>
+            <div id="left">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+            </div>
+            <div id="right">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
+        </div>
     </footer>
 </body>
 
